@@ -1,16 +1,27 @@
-#include <iostream> // necessary for all c++ programs to load all libraries
+#include <iostream>
+/**
+ * All files in C++ have header files that begin with #include. These
+ * serve the purpose of allowing C++ programs to include libraries in
+ * C++.
+ */
 
-using namespace std; // tells the compiler we're using the standard c++ library
+/**
+ * Using namespace tells the C++ compiler that we are going to use the standard library "std"
+ * in this main program.
+ */
+using namespace std;
 
 int main()
 { // main function in c++ program; entry point
 
     /**n
-     * The mian function works sychronously, so all the functions run in order.
+     * The main function works sychronously, so all the functions run in order.
      */
     cout << "This is the main function in c++ program\n"
          << endl;
+    int numberA = cin.get(); // gets the character or group of characters we type
 
+    cout << "Number A is: " << numberA << endl;
     cout << "Size of char : " << sizeof(char) << endl;
     cout << "Size of int : " << sizeof(int) << endl;
     cout << "Size of short int : " << sizeof(short int) << endl;
