@@ -14,6 +14,14 @@
  */
 using namespace std;
 
+/**
+ * Here is an example of a method that has a void or no return type.
+ */
+void Log(const char *message, string nameOne)
+{
+    cout << message << nameOne << endl;
+}
+
 int main()
 { // main function in c++ program; entry point
 
@@ -49,17 +57,39 @@ int main()
 
     cout << "\nThe name entered is: " << nameAS << endl;
 
+    cout << "The Log function that we retrieved from the other file: \n"
+         << endl;
+    Log("Buddy, ", "You have finished the basics section!");
+
     /*
     Output:
+
     This is the main function in c++ program
 
-Size of char : 1
-Size of int : 4
-Size of short int : 2
-Size of long int : 8
-Size of float : 4
-Size of double : 8
-Size of wchar_t : 4
+    Stefan
+
+    Here are sizes of all the primitive types in C++.
+
+    Size of char : 1
+    Size of int : 4
+    Size of short int : 2
+    Size of long int : 8
+    Size of float : 4
+    Size of double : 8
+    Size of wchar_t : 4
+    Int Min -2147483648
+    Int Max 2147483647
+    Unsigned Int  Min 0
+    Unsigned Int Max 4294967295
+    Long Int Min -9223372036854775808
+    Long Int Max 9223372036854775807
+    Unsigned Long Int Min 0
+    Unsigned Long Int Max 0
+
+    The name entered is: Stefan
+    The Log function that we retrieved from the other file:
+
+    Buddy, You have finished the basics section!
     */
 
     return 0; // necessary for all c++ programs to end main function, and if it executes successfully
