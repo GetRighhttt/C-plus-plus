@@ -28,6 +28,7 @@ int main()
 
     cin.get(nameAS, 10); // gets the character or group of characters we type.
 
+    cout << "\nHere are sizes of all the primitive types in C++." << endl;
     cout << "\nSize of char : " << sizeof(char) << endl;
     cout << "Size of int : " << sizeof(int) << endl;
     cout << "Size of short int : " << sizeof(short int) << endl;
@@ -35,6 +36,16 @@ int main()
     cout << "Size of float : " << sizeof(float) << endl;
     cout << "Size of double : " << sizeof(double) << endl;
     cout << "Size of wchar_t : " << sizeof(wchar_t) << endl;
+
+    std::cout << "Int Min " << std::numeric_limits<int>::min() << endl;
+    std::cout << "Int Max " << std::numeric_limits<int>::max() << endl;
+    std::cout << "Unsigned Int  Min " << std::numeric_limits<unsigned int>::min() << endl;
+    std::cout << "Unsigned Int Max " << std::numeric_limits<unsigned int>::max() << endl;
+    std::cout << "Long Int Min " << std::numeric_limits<long int>::min() << endl;
+    std::cout << "Long Int Max " << std::numeric_limits<long int>::max() << endl;
+
+    std::cout << "Unsigned Long Int Min " << std::numeric_limits<unsigned long int>::min() << endl;
+    std::cout << "Unsigned Long Int Max " << std::numeric_limits<unsigned long int>::min() << endl;
 
     cout << "\nThe name entered is: " << nameAS << endl;
 
