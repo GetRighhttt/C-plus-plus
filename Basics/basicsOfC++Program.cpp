@@ -17,6 +17,8 @@ using namespace std;
 int main()
 { // main function in c++ program; entry point
 
+    char nameAS[10]; // creating a char array that we can use with cin.get().
+
     /**n
      * The main function works sychronously, so all the functions run in order.
      */
@@ -24,15 +26,17 @@ int main()
          << endl;
     // << operator that is basically a function.
 
-    cin.get(); // gets the character or group of characters we type
+    cin.get(nameAS, 10); // gets the character or group of characters we type.
 
-    cout << "Size of char : " << sizeof(char) << endl;
+    cout << "\nSize of char : " << sizeof(char) << endl;
     cout << "Size of int : " << sizeof(int) << endl;
     cout << "Size of short int : " << sizeof(short int) << endl;
     cout << "Size of long int : " << sizeof(long int) << endl;
     cout << "Size of float : " << sizeof(float) << endl;
     cout << "Size of double : " << sizeof(double) << endl;
     cout << "Size of wchar_t : " << sizeof(wchar_t) << endl;
+
+    cout << "\nThe name entered is: " << nameAS << endl;
 
     /*
     Output:
