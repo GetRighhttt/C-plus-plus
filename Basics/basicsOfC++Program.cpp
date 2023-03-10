@@ -26,7 +26,6 @@ int main()
 
     cin.get(); // gets the character or group of characters we type
 
-    cout << "Number A is: " << endl;
     cout << "Size of char : " << sizeof(char) << endl;
     cout << "Size of int : " << sizeof(int) << endl;
     cout << "Size of short int : " << sizeof(short int) << endl;
